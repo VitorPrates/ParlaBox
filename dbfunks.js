@@ -20,3 +20,21 @@ function salvar()
         tx.executeSql('INSERT INTO test (name, depoi) VALUES(?,?)',[nome.value,depoiment.value])
     })
 }
+
+// document.addEventListener("DOMContentLoaded", mostrar);
+function mostrar()
+{
+   db.transaction(function(tx){
+    tx.executeSql('SELECT * FROM test', [], function(tx,resultado){
+        var rows = resultado.rows;
+        for(var i = 0; i < rows.length; i++)
+        {
+            lista_depoimentos.innerHTML += `<div class="depoi">
+            <p>${rows[i].depoi}</p>
+          </div>`
+        }
+        setar_depois()
+    }, null)
+   })
+   
+}

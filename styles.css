@@ -86,13 +86,17 @@ header .logo-header-box {
 }
 
 .front-main-use {
+  width: 93.5%;
   height: 70%;
-  background-color: rgb(177, 3, 3);
+  background-color: rgb(245, 0, 0);
   border: 2px solid;
   margin: 10px;
+  position: absolute;
+  left: 0%;
   display: flex;
   align-items: center;
   border-radius: 10px;
+  transition: 0.5s;
 }
 .front-main-use .init-infos {
   width: 100%;
@@ -104,7 +108,7 @@ header .logo-header-box {
   align-items: center;
 }
 .front-main-use .init-infos h3 {
-  margin: 120px auto 10px auto;
+  margin: 25% auto 10px auto;
   font-family: "Roboto";
   font-size: 2em;
   color: black;
@@ -131,7 +135,7 @@ header .logo-header-box {
   width: 30vw;
   height: 40px;
   border-radius: 50px;
-  transition: 0.5s;
+  transition: 0.5s ease;
 }
 .front-main-use .init-infos .botoes .enviar_dados {
   margin: 10px;
@@ -152,4 +156,42 @@ header .logo-header-box {
   border: 2px solid;
   border-radius: 5px;
   resize: none;
+}
+
+.depoimentos_registrados {
+  width: 93.5%;
+  height: 70%;
+  background-color: rgb(245, 0, 0);
+  border: 2px solid;
+  margin: 10px;
+  position: absolute;
+  left: 100%;
+  border-radius: 10px;
+  transition: 0.5s;
+  font-family: "roboto";
+}
+.depoimentos_registrados h3 {
+  margin: 10px;
+  font-size: 1.7em;
+}
+.depoimentos_registrados .depoimentos {
+  height: 85%;
+  margin: 10px;
+  overflow-y: auto;
+}
+.depoimentos_registrados .depoi {
+  height: 50px;
+  padding: 7px;
+  margin: 5px 10px;
+  background-color: rgb(212, 96, 0);
+  border-radius: 10px;
+  border: 2px solid;
+  overflow: hidden;
+  transition: 0.5s ease;
+}
+.depoimentos_registrados .ampliado {
+  min-height: 50px;
+  height: -moz-max-content;
+  height: max-content;
+  transition: 0.5s;
 }/*# sourceMappingURL=styles.css.map */
