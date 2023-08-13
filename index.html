@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ParlaBox</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body onload="trocar()">
+    <header>
+      <h1>ParlaBox</h1>
+      <div class="logo-header-box"></div>
+    </header>
+
+    <div class="titulo-duvida">
+      <div class="box-titulo">
+        <h2 class="Titulo-1-titulo">
+          Envie <span class="roll-options-2">Uma</span>
+          <span class="roll-options-1" onclick="trocar()">Dúvida</span>!
+        </h2>
+        <p class="Titulo-1-texto">Projeto de pesquisa 1</p>
+      </div>
+      <div class="duvida"></div>
+    </div>
+    <section class="front-main-use">
+      <from class="init-infos">
+          <h3 class="name-titulo">Nome</h3>
+          <input type="text" name="name-field" id="name-field" placeholder="Digite aqui" maxlength="18"/>
+          <textarea class="depoimento" name="depoimento" id="depoimento" cols="30" rows="19" placeholder="Digite aqui" spellcheck="true"></textarea>
+          <div class="botoes">
+             <button class="btn-avancar" onclick="avancar()">Avançar</button>
+          <button class="enviar_dados">Enviar</button>
+          </div>
+      </form>
+    </section>
+
+    <script type="text/javascript" src="funks.js"></script>
+    <script type="text/javascript" src="dbfunks.js"></script>
+  </body>
+</html>

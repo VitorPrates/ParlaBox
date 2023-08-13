@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;1,200;1,400;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;1,200;1,400;1,600;1,700&family=Roboto:wght@100;300;400&display=swap");
+@font-face {
+  font-family: "Nunito", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+html {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(38, 142, 142);
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  background-color: blue;
+  display: flex;
+  align-items: center;
+}
+header h1 {
+  color: white;
+  font-family: "Nunito", sans-serif;
+  margin: auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 2.1em;
+}
+header .logo-header-box {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: 2px solid;
+  margin: auto;
+}
+
+.titulo-duvida {
+  display: flex;
+  align-items: center;
+}
+.titulo-duvida .box-titulo {
+  border: 3px solid white;
+  border-radius: 10px;
+  width: 170px;
+  overflow: visible;
+  margin: 10px 0px 0px 10px;
+  position: relative;
+}
+.titulo-duvida .box-titulo .Titulo-1-titulo {
+  color: white;
+  font-family: "roboto";
+  font-size: 2em;
+  margin: 10px 0px 0px 10px;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  background-color: rgb(38, 142, 142);
+  overflow: hidden;
+  transition: 0.5s;
+}
+.titulo-duvida .box-titulo .Titulo-1-titulo .roll-options-1,
+.titulo-duvida .box-titulo .Titulo-1-titulo .roll-options-2 {
+  color: white;
+  font-family: "roboto";
+  position: relative;
+  top: 0px;
+  transition: 0.5s;
+}
+.titulo-duvida .box-titulo .Titulo-1-titulo .fake-background {
+  transition: 0.5s;
+}
+.titulo-duvida .box-titulo .Titulo-1-texto {
+  color: white;
+  font-family: "roboto";
+  margin: 0px 0px 10px 10px;
+  min-width: -moz-max-content;
+  min-width: max-content;
+}
+
+.front-main-use {
+  height: 70%;
+  background-color: rgb(177, 3, 3);
+  border: 2px solid;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+}
+.front-main-use .init-infos {
+  width: 100%;
+  height: 90%;
+  margin: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.front-main-use .init-infos h3 {
+  margin: 120px auto 10px auto;
+  font-family: "Roboto";
+  font-size: 2em;
+  color: black;
+  transition: 0.5s;
+}
+.front-main-use .init-infos input {
+  border-radius: 50px;
+  width: 75vw;
+  height: 10vw;
+  max-height: 40px;
+  padding: 0px 10px;
+  font-size: 1em;
+  border: 2px solid;
+}
+.front-main-use .init-infos .botoes {
+  display: flex;
+  flex-direction: column;
+  height: 46%;
+  width: 100%;
+}
+.front-main-use .init-infos .botoes .btn-avancar {
+  margin: 10px;
+  margin: 10px auto;
+  width: 30vw;
+  height: 40px;
+  border-radius: 50px;
+  transition: 0.5s;
+}
+.front-main-use .init-infos .botoes .enviar_dados {
+  margin: 10px;
+  margin: auto 10px 10px auto;
+  width: 30vw;
+  height: 40px;
+  border-radius: 50px;
+  transition: 0.5s;
+  opacity: 0;
+}
+.front-main-use .init-infos .depoimento {
+  display: none;
+  height: 0px;
+  width: 85%;
+  margin: -10px 0px 10px 0px;
+  padding: 5px;
+  transition: 0.5s;
+  border: 2px solid;
+  border-radius: 5px;
+  resize: none;
+}/*# sourceMappingURL=styles.css.map */
