@@ -71,7 +71,7 @@ function enviar_dados() {
   } else {
     alert("Obrigado pelo Depoimento!");
     sessao_1.style.left = "-100%";
-    sessao_2.style.left = "0%";
+    sessao_2.style.left = "-100%";
   }
   setTimeout(() => {
     mostrar()
