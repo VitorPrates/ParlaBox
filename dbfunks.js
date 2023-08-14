@@ -1,6 +1,6 @@
 window.addEventListener('load', carregado)
 
-var db = openDatabase("dbProj1",'2.0','Banco de Teste 1', 2 * 1024 * 1024);
+var db = openDatabase("dbProj1",'1.0','Banco de Teste 1', 2 * 1024 * 1024);
 
 function criar_tabela()
 {
