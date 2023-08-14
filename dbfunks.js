@@ -1,15 +1,25 @@
 window.addEventListener('load', carregado)
 
-var db = openDatabase("dbProj1",'1.0','Banco de Teste 1', 2 * 1024 * 1024);
+var db = openDatabase("dbProj1",'2.0','Banco de Teste 1', 2 * 1024 * 1024);
 
-db.transaction(function(tx){
-    tx.executeSql('CREATE TABLE IF NOT EXISTS test (id INTEGER PRIMARY KEY, name TEXT, depoi TEXT)')
-    tx.executeSql('ALTER TABLE test ADD COLUMN depoi TEXT')
-})
+function criar_tabela()
+{
+    db.transaction(function(tx){
+        tx.executeSql('CREATE TABLE IF NOT EXISTS test (id INTEGER PRIMARY KEY, name TEXT, depoi TEXT)')
+        // tx.executeSql('ALTER TABLE test ADD COLUMN depoi TEXT')
+    })
+}
+function adicionar_coluna() {
+    db.transaction(function(tx) {
+        tx.executeSql('ALTER TABLE test ADD COLUMN depoi TEXT');
+    });
+}
 
 function carregado()
 {
     document.querySelector('.enviar_dados').addEventListener('click', salvar)
+    criar_tabela()
+    adicionar_coluna()
 }
 
 function salvar()
